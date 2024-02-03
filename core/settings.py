@@ -4,10 +4,8 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# SECURITY WARNING
+# XXX
 SECRET_KEY = "django-insecure-+!j45@_2nj#ysv3&5tt3k36dl*bc&&a816x+0d#q-2k!83smmq"
-
-# SECURITY WARNING
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -48,6 +46,7 @@ TEMPLATES = [
         }
     }
 ]
+STATIC_URL = "static/"
 
 WSGI_APPLICATION = "core.wsgi.application"
 
@@ -74,13 +73,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LANGUAGE_CODE = "en-us"
-
-TIME_ZONE = "UTC"
-
 USE_I18N = True
 
+TIME_ZONE = "UTC"
 USE_TZ = True
-
-STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
